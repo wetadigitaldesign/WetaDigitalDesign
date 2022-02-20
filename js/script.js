@@ -5,7 +5,7 @@ $(document).ready(function(){
         `
             <div class="informationContent">
                 <div class="discription">
-                    <h1>Weta digital design</h1>
+                    <h1 data-swiftype-name="title" data-swiftype-type="string">Weta digital design</h1>
                     <br />
                     <br />
                     <br />
