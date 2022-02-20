@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size: 65.5%;
+}
+h1{
+    font-family: 'Merienda', cursive;
+    font-size: 4.6rem;
+}
+h2{
+    font-family: 'Merienda', cursive;
+    font-size: 2rem; 
+    letter-spacing: 0.2rem;
+}
+p{
+    font-family: 'Merienda', cursive;
+    font-size: 1.8rem;
+}
+button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Merienda', cursive;
+}
+.mobile{
+    display: none;
+}
+
+.masterContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 90vh;
+    width: 90vw;
+    border: 0.2rem solid #1a1a18;
+    border-radius: 2rem;
+    overflow: none;
+    display: flex;
+}
+.informationContent{
+    height: 100%;
+    width: 40%;
+    border-right: 0.2rem solid #1a1a18;
+}
+.discription{
+    height:60%;
+    width: 100%;
+    border-bottom: 0.2rem solid #1a1a18;
+    padding:3rem;
+}
+.discription p{
+    width:45ch;
+    letter-spacing: 0.2rem;
+}
+.wetaPictureContainer{
+    height:40%;
+    width: 100%;
+    padding: 3rem; 
+}
+.interactiveContent{
+    height: 100%;
+    width: 60%;
+
+}
+.interactiveHeader{
+    height: 15%;
+    width: 100%;
+
+    display: flex;
+}
+.brushContainer{
+    width: 80%;
+    height:100%;
+    border-right: 0.2rem solid #1a1a18;
+}
+.brushInfo,.brushes{
+    width:100%;
+    height:50%;
+}
+.brushInfo{
+    border-bottom: 0.2rem solid #1a1a18;
+    padding:1rem;
+}
+
+.interactiveHeader button{
+    height: 100%;
+    width: 20%;
+    font-size: 2rem;
+    background: #1a1a18;
+    color: #f9f9f9;
+    border-top-right-radius: 20px;
+    letter-spacing: 0.2rem;
+}
+.interactiveHeader button:hover{
+    background: #f9f9f9;
+    color: #1a1a18;
+}
+.brushes{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+.brushes button{
+    height: 4rem;
+    width: 4rem;
+    background: #1a1a18;
+    border-radius: 9rem;
+    margin-right: 1rem;
+}
+.brushes button:nth-of-type(1) {
+    background: #FCC4C9;
+}
+.brushes button:nth-of-type(2) {
+    background: #F8E2CF;
+}
+.brushes button:nth-of-type(3) {
+    background: #F5C6AA;
+}
+.brushes button:nth-of-type(4) {
+    background: #9BEEC1;
+}
+.brushes button:nth-of-type(5) {
+    background: #1a1a18;
+}
+
+.interactiveCanvas{
+    height:75%;
+    width:100%;
+    border-top: 0.2rem solid #1a1a18;
+    border-bottom: 0.2rem solid #1a1a18;
+}
+canvas{
+    width: 100%;
+    height: 100%;
+
+}
+.interactiveFooter{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.copyUrl{
+    padding: 0.5rem;
+    /* height: 50%; */
+    width:30%;
+    position: relative;
+    transition: 0.3s;
+} 
+.copyUrl:before{
+    content: '';
+    border-bottom: 0.1rem solid black;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    transition: 0.3s;
+}
+.copyUrl:hover:before{
+    width: 50%;
+    padding:0;
+}
+.copyUrl:active{
+    color: lightsalmon;
+    transition: none;
+}
+.linkDiscription{
+    height: 100%;
+    width: 50%;
+    border-left: 0.2rem solid #1a1a18;
+    border-right: 0.2rem solid #1a1a18;
+    padding: 1rem;
+}
+.timer{
+    width:20%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#stopTime{
+    display: none;
+}
+    
+@media only screen and (min-width: 992px) {
+    p{
+        font-size: 1.4rem;
+    }
+
+}
+
+
+
+
+ @media only screen and (min-width: 200px) and (max-width: 767px)  {
+    .mobile{
+        display: block;
+    }
+    .masterContainer{
+        display: none;
+    }
+}
